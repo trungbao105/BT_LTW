@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trang Web Mẫu</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        #menu-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 200px;
+            margin-right: 20px;
+            flex-wrap: nowrap; 
+        }
+
+        #menu {
+            width: 100%;
+            position: relative;
+            top: -350px;
+            left:-20px;
+        }
+
+            #menu h2 {
+                margin-bottom: 10px;
+            }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #product-container {
+            width: 900px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #top-bar {
+            display:flex;
+            width: 968px;
+            height: 50px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+            
+        }
+
+        .sort-label {
+            margin-right: 10px;
+        }
+
+        .button {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .page-control {
+            margin-left: auto;
+        }
+
+        #page-number {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        #product-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            width: 160px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size:14px;
+            line-height:17px;
+        }
+
+            .product img {
+                max-width: 100%;
+            }
+        .page-navigation {
+            width: 100%;
+            display: flex;
+           
+            
+            align-items: flex-end;
+            margin-top: 20px;
+            position: relative;
+            bottom: -50px;
+            left:-640px;
+        }
+
+            .page-navigation button {
+                padding: 5px 10px;
+                margin: 0 5px;
+                background-color: #ccc;
+                border: none;
+                cursor: pointer;
+                
+            }
+
+            .page-navigation .dots {
+                margin: 0 5px;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="menu-container">
+            <div id="menu">
+                <h2>Danh mục</h2>
+                    <a href="https://shopee.vn/S%E1%BA%AFc-%C4%90%E1%BA%B9p-cat.11036279">Sắc Đẹp</a> <br />
+                    <a href="https://shopee.vn/Ch%C4%83m-s%C3%B3c-da-m%E1%BA%B7t-cat.11036279.11036328">Chăm sóc da mặt</a><br />
+                    <a href="https://shopee.vn/T%E1%BA%AFm-ch%C4%83m-s%C3%B3c-c%C6%A1-th%E1%BB%83-cat.11036279.11036280">Tắm & chăm sóc cơ thể</a><br />
+                    <a href="https://shopee.vn/Trang-%C4%91i%E1%BB%83m-cat.11036279.11036314">Trang điểm</a><br />
+                    <a href="https://shopee.vn/Ch%C4%83m-s%C3%B3c-t%C3%B3c-cat.11036279.11036297">Chăm sóc tóc</a><br />
+                    <a href="https://shopee.vn/D%E1%BB%A5ng-c%E1%BB%A5-Ph%E1%BB%A5-ki%E1%BB%87n-L%C3%A0m-%C4%91%E1%BA%B9p-cat.11036279.11036321">Dụng cụ và phụ kiện làm đẹp</a><br />
+            </div>
+        </div>
+
+        <div id="product-container">
+            <div id="top-bar">
+                <span class="sort-label">Sắp xếp theo</span>
+                <button class="button">Phổ biến</button>
+                <button class="button">Mới nhất</button>
+                <button class="button">Bán chạy</button>
+                <div class="page-control">
+                    <button class="button"><</button>
+                    <span id="page-number">1/9</span>
+                    <button class="button">></button>
+                </div>
+            </div>
+            <div id="product-grid">
+                <div id="product-grid">
+                    <div class="product">
+                        <a href="https://shopee.vn/Son-Bbia-25-m%C3%A0u-%C4%91%E1%BB%8F-n%C3%A2u-%C4%91%E1%BA%A5t-v%C3%A0-c%C3%A1c-m%C3%A3-m%C3%A0u-bestseller-c%E1%BB%A7a-BBIA-(Ch%C3%ADnh-h%C3%A3ng)-i.102631073.12740801656?sp_atk=b623c163-6395-43f4-b1b4-8f170d348538&xptdk=b623c163-6395-43f4-b1b4-8f170d348538">
+                            <img src="https://down-vn.img.susercontent.com/file/05349891034e0a72c4dff0c0e8fd139d" alt="Sản phẩm 1" />
+                            <p>Son Bbia 25 màu đỏ nâu đất và các mã màu bestseller của BBIA (Chính hãng)</p>
+                            <p>₫115.000 - ₫129.000</p>
+                            <p>Đã Bán 25,5k</p>
+                            <p>Hà Nội</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/-C%C3%93-S%E1%BA%B4N-N%C6%B0%E1%BB%9Bc-hoa-Th%C3%A1i-Lan-m%C3%B9i-ph%E1%BA%A5n-em-b%C3%A9-h%C6%B0%C6%A1ng-th%C6%A1m-ph%E1%BA%A3ng-ph%E1%BA%A5t-d%E1%BB%8Bu-nh%E1%BA%B9-H%C3%A0ng-n%E1%BB%99i-%C4%91%E1%BB%8Ba-Th%C3%A1i-i.30307559.18849777968?sp_atk=4fa798a0-3238-46e1-9f82-d13b5c6ba1d0&xptdk=4fa798a0-3238-46e1-9f82-d13b5c6ba1d0">
+                            <img src="https://down-vn.img.susercontent.com/file/5d3a9799053f1069611601bbec220031" alt="Sản phẩm 2" />
+                            <p> [CÓ SẴN] Nước hoa Thái Lan mùi phấn em bé hương thơm phảng phất dịu nhẹ - Hàng nội địa Thái</p>
+                            <p>₫8.900 - ₫38.900</p>
+                            <p>Đã Bán 79k</p>
+                            <p>TP.Hồ Chí Minh</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/M%E1%BA%B7t-N%E1%BA%A1-Gi%E1%BA%A5y-Banobagi-Mask-Retinol-Collagen-Vitamin-Vi%C3%AAn-Thu%E1%BB%91c-D%C6%B0%E1%BB%A1ng-Tr%E1%BA%AFng-Da-M%E1%BA%B7t-C%E1%BA%A5p-%E1%BA%A8m-Gi%E1%BA%A3m-M%E1%BB%A5n-Ki%E1%BB%81m-D%E1%BA%A7u-30ml-i.393854521.12373801097?sp_atk=09e7fa4d-d5e8-42a6-bfac-39a83b05fbef&xptdk=09e7fa4d-d5e8-42a6-bfac-39a83b05fbef">
+                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljdl5u4mojykb6" alt="Sản phẩm 3" />
+                            <p>Mặt Nạ Giấy Banobagi Mask Retinol Collagen Vitamin Viên Thuốc Dưỡng Trắng Da Mặt Cấp Ẩm Giảm Mụn Kiềm Dầu 30ml</p>
+                            <p>₫6.990 - ₫14.900</p>
+                            <p>Đã Bán 188,8k</p>
+                            <p>TP.Hồ Chí Minh</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/Set-24-m%C3%B3ng-tay-gi%E1%BA%A3-ki%E1%BB%83u-ph%C3%A1p-xinh-x%E1%BA%AFn-k%C3%A8m-12-keo-th%E1%BA%A1ch-d%C3%A1n-m%C3%B3ng-ti%E1%BB%87n-d%E1%BB%A5ng-i.458110700.11415173041?sp_atk=66ad5c2c-279f-412b-9cf8-45c539c119d4&xptdk=66ad5c2c-279f-412b-9cf8-45c539c119d4">
+                            <img src="https://down-vn.img.susercontent.com/file/cn-11134207-7qukw-lfxwe3nhmbygc8" alt="Sản phẩm 4" />
+                            <p>Set 24 móng tay giả kiểu pháp xinh xắn kèm 12 keo thạch dán móng tiện dụng</p>
+                            <p>₫1.400 - ₫7.000</p>
+                            <p>Đã Bán 299,6k</p>
+                            <p>Nước ngoài</p>
+                        </a>
+
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/Son-kem-Bbia-Last-Velvet-Lip-Tint-Full-m%C3%A0u-21-22-23-24-25-36-38-39-i.12964260.2610262319?sp_atk=21ce763a-7e88-4431-9f41-c2b43413977e&xptdk=21ce763a-7e88-4431-9f41-c2b43413977e">
+                            <img src="https://down-vn.img.susercontent.com/file/36393d0c68c79843f8bb4e3b67700ab6" alt="Sản phẩm 5" />
+                            <p>Son kem Bbia Last Velvet Lip Tint Full màu 21 22 23 24 25 36 38 39</p>
+                            <p>₫119.000 - ₫125.000</p>
+                            <p>Đã Bán 76,2k</p>
+                            <p>TP.Hồ Chí Minh</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/X%E1%BB%8Bt-Th%C6%A1m-Mi%E1%BB%87ng-CUIJU-Hoa-Qu%E1%BA%A3-Th%C6%A1m-mi%E1%BB%87ng-s%E1%BA%A1ch-s%E1%BA%BD-th%C6%A1m-tho-MM-i.74804504.21140708584?sp_atk=6f2f0192-b541-456b-9b11-4ddb4db89799&xptdk=6f2f0192-b541-456b-9b11-4ddb4db89799">
+                            <img src="https://down-vn.img.susercontent.com/file/dab1accb7a0416112d36cdaecff35f90" alt="Sản phẩm 6" />
+                            <p>Xịt Thơm Miệng CUIJU Hoa Quả Thơm miệng sạch sẽ thơm tho MM</p>
+                            <p>₫3.000 - ₫13.800</p>
+                            <p>Đã Bán 57k</p>
+                            <p>Nước ngoài</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/M%E1%BA%B7t-n%E1%BA%A1-gi%E1%BA%A5y-d%C6%B0%E1%BB%A1ng-tr%E1%BA%AFng-da-m%E1%BB%A5n-c%E1%BA%A5p-%E1%BA%A9m-th%E1%BA%A3i-%C4%91%E1%BB%99c-HA-Images-mn02-i.184695342.5500007465?sp_atk=6c69b518-619e-4f91-935e-6b23a97f3c3c&xptdk=6c69b518-619e-4f91-935e-6b23a97f3c3c">
+                            <img src="https://down-vn.img.susercontent.com/file/65b1372939e569e7d34a4dd2546b0f65" alt="Sản phẩm 7" />
+                            <p>Mặt nạ giấy dưỡng trắng da mụn cấp ẩm thải độc HA Images - mn02</p>
+                            <p>₫1.000 - ₫3.500</p>
+                            <p>Đã Bán 1,4tr</p>
+                            <p>Hà Nội</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/N%C6%B0%E1%BB%9Bc-hoa-Th%C3%A1i-h%C6%B0%C6%A1ng-ph%E1%BA%A5n-em-b%C3%A9-m%C3%B9i-th%C6%A1m-ph%E1%BA%A3ng-ph%E1%BA%A5t-d%E1%BB%8Bu-nh%E1%BA%B9-X%E1%BB%8Bt-th%C6%A1m-n%E1%BB%99i-%C4%91%E1%BB%8Ba-Th%C3%A1i-i.38129983.20242559638?sp_atk=4c3cff8d-66cf-41f7-91d0-5ad8b15309bf&xptdk=4c3cff8d-66cf-41f7-91d0-5ad8b15309bf">
+                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkrpokup15fke8" alt="Sản phẩm 8" />
+                            <p>N04 Mặt nạ quả bơ cấp ẩm mờ thâm dưỡng da làm sa mềm mịn cải thiện làn da khoẻ mạnh mặt nạ nội địa trung</p>
+                            <p>₫1.000 - ₫1.995</p>
+                            <p>Đã Bán 937k</p>
+                            <p>Hà Nội</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/-T%E1%BA%B6NG-5m-M%E1%BA%B7t-n%E1%BA%A1-gi%E1%BA%A5y-Bioaqua-H%C6%B0%C6%A1ng-Tr%C3%A1i-C%C3%A2y-t%E1%BB%B1-nhi%C3%AAn-cao-c%E1%BA%A5p-ch%C3%ADnh-h%C3%A3ng-gi%C3%BAp-tr%E1%BA%AFng-da-c%E1%BA%A5p-%E1%BA%A9m-ki%E1%BB%81m-d%E1%BA%A7u-th%E1%BA%A3i-%C4%91%E1%BB%99c-i.989422541.22940271864?sp_atk=850f4411-49da-45cf-8fb3-3073c5b1f06a&xptdk=850f4411-49da-45cf-8fb3-3073c5b1f06a">
+                            <img src="https://down-vn.img.susercontent.com/file/787fdec1241a31d65fbbe5e04bdaab8e" alt="Sản phẩm 9" />
+                            <p>Son Bbia 25 màu đỏ nâu đất</p>
+                            <p>₫105.000 - ₫129.000</p>
+                            <p>Đã Bán 53,5k</p>
+                            <p>Hà Nội</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://shopee.vn/Set-24-M%C3%B3ng-Tay-Gi%E1%BA%A3-2022-C%C3%B3-Keo-D%C3%A1n-Acrylic-To%C3%A0n-Di%E1%BB%87n-Phong-C%C3%A1ch-Ph%C3%A1p-i.458110700.20008357751?sp_atk=239c7dad-2e55-49ad-92be-3ad17b45ce3b&xptdk=239c7dad-2e55-49ad-92be-3ad17b45ce3b">
+                            <img src="https://down-vn.img.susercontent.com/file/306cc38fc58ad6975208374771eef27a" alt="Sản phẩm 10" />
+                            <p>Set 24 Móng Tay Giả 2022 Có Keo Dán Acrylic Toàn Diện Phong Cách Pháp</p>
+                            <p>₫3.000 - ₫14.500</p>
+                            <p>Đã Bán 178,9k</p>
+                            <p>Nước ngoài</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="page-navigation">
+                    <button>&lt;</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <span class="dots">...</span>
+                    <button>&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
