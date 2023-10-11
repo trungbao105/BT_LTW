@@ -12,8 +12,8 @@
             overflow-x: hidden;
         }
         .main{
-            width:2000px;
-            height:700px;
+            width:3500px;
+            height:1500px;
             color:#333333;
             box-sizing:border-box;
             
@@ -36,7 +36,7 @@
 
         .product-img img {
             height: 340px;
-            width: 240px;
+            width: 340px;
         }
         .product-img {
             width: 484px;
@@ -45,9 +45,300 @@
             min-height: auto;
             display: block;
             box-sizing: border-box;
+            vertical-align:middle;
+            text-align:center;
+            
+            
+        }
+        .add-box{
+            display:flex;
+            height:44px;
+            width:484px;
+            text-align:left;
+            margin:24px;
+        }
+        .button {
+            box-sizing: border-box;
+            border-radius:8px 8px 8px 8px;
+        }
+        #add_to_cart{
+            height:44px;
+            width:200px;
+            border: 2px solid #c92127;
+            padding: 0 10px 0 10px;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none solid rgb(201,33,39);
+            line-height:20px;
+            font-weight:700;
+            color:red;
+        }
+        #buy_now {
+            background-color: #c92127;
+            height: 44px;
+            width: 200px;
+            border: 2px solid #c92127;
+            padding: 0 10px 0 10px;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none solid rgb(201,33,39);
+            line-height: 20px;
+            font-weight: 700;
+            margin: 0 0 0 10px;
+            color:white;
+            
         }
         .product-detail{
+            height:468px;
+            width:714px;
+            padding: 0 0 0 36px;
+        }
+        .book_infor{
+            width:678px;
+            height:56px;
+            padding: 0 0 8px 0;
+            
+        }
 
+        #s1, #s2{
+
+            height:24px;
+            width:678px;
+        }
+
+        #supplier {
+            overflow: hidden;
+            display: inline-block;
+            height: 19px;
+            width: 407px;
+            padding: 0 15px 0 0;
+           
+        }
+
+        #author {
+            overflow: hidden;
+            display: inline-block;
+            height: 18px;
+            width: 264px;
+            padding: 0 0 0 15px;
+            position:relative;
+            top:-22px;
+            left:300px;
+     
+        }
+
+        .Priceblock{
+            height:64px;
+            width:678px;
+            padding: 8px 0 16px 0;
+            min-height:1px;
+            position:relative;
+            display:flex;
+            float:left
+        }
+
+        #listprice{
+            height:33px;
+            width:244px;
+            padding-right:8px;
+            display:block;
+        }
+
+        #pricedetail{
+            display:flex;
+            height:32px;
+            width:244px;
+            padding-right:8px;
+        }
+
+        #price1,#price2,#discount{
+            display:inline;
+        }
+
+        #price1{
+            font-size:32px;
+            font-weight:700;
+            line-height:32px;
+            height:auto;
+            width:auto;
+            min-height:25px;
+            color:red;
+        }
+
+        .old-price{
+            height:21px;
+            width:110px;
+        }
+
+        #price2{
+            height:auto;
+            width:auto;
+            margin-left:8px;
+            padding-left:5px;
+            position:relative;
+            top:-3px;
+        }
+
+        #discount {
+            background-color: #c92127;
+            height: auto;
+            width: auto;
+            margin-left: 68px;
+            position:relative;
+            top:-20px;
+            padding:4px 4px 4px 4px;
+            border-radius:4px 4px 4px 4px;
+            color:white;
+        }
+        
+        #delivery{
+            height:61px;
+            width:678px;
+            padding: 8px 0 0 0;
+        }
+        #address, #policy {
+            display:flex;
+            height:26px;
+            width:678px;
+            padding-bottom:8px;
+        }
+        #list1{
+            display:block;
+            height:18px;
+            width:150px;
+            min-height:auto;
+            max-width:200px;
+            min-width:150px
+        }
+
+        #list2{
+            height:18px;
+            width:477px;
+            display:flex;
+        }
+        .quantity {
+            display: flex;
+            height: 48px;
+            width: 678px;
+            padding: 8px 0 8px 0;
+            margin-top: 100px;
+        }
+        #quantity-box {
+            height: 32px;
+            width: 678px;
+            display: flex;
+        }
+        .quantity label {
+            height: 22px;
+            width: 150px;
+            padding-right: 8px;
+            min-height: auto;
+            max-width: 200px;
+            min-width: 150px;
+            display: block;
+            font-size:16px;
+            font-weight:700;
+            line-height:22px;
+        }
+         #quantity-box-block{
+             height:32px;
+             width:140px;
+             min-height:auto;
+             min-width:auto;
+             border-radius:8px;
+         }
+
+        .quantity input {
+            height: 26px;
+            width: 47px;
+            padding: 2px 2px 2px 2px;
+            min-height: auto;
+            min-width: auto;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 8px;
+        }
+
+        .quantity button {      
+            border-radius: 8px;
+            cursor: pointer;
+            height: 30px;
+            width: 36px;
+            text-align: center;
+        }
+                .quantity button:hover {
+                    background-color: #0056b3;
+                }
+
+        .product-view-infor{
+            background-color:#FFFFFF;
+            font-family:nunito-sans, sans-serif, helvetica, Arial;
+            margin-top:15px;
+            margin-bottom:30px;
+            margin-left:150px;
+            font-size:13px;
+            line-height:19px;
+            height:720px;
+            width:1230px;
+            padding:15px 15px 15px 15px;
+            border-radius:8px 8px 8px ;
+            text-align:left;
+        }
+        .content-title{
+            height:27px;
+            width:1200px;
+            font-size:19px;
+            font-weight:700;
+            color:#333333;
+        }
+        .product-view-content{
+            height:700px;
+            width:1200px;
+            max-height:600px;
+            
+        }
+        .table-label{
+            font-weight:100;
+            height:31px;
+            width:300px;
+            padding:4px 4px 4px 0;
+            display:table-cell;
+            border-collapse:collapse;
+            font-size:14px;
+            line-height:23px;
+        }
+        .data {
+            font-size: 14px;
+            line-height: 20px;
+            vertical-align: top;
+            height: 31px;
+            width: 900px;
+            padding: 4px 4px 4px 4px;
+            display: table-cell;
+            border-collapse: collapse;
+        }
+        .data li{
+            height:21px;
+            width:877px;
+            margin-left:15px;
+            display:list-item;
+            list-style-type:disc;
+            list-style-position:outside;
+        }
+        #tt1 {
+            font-size: 14px;
+            line-height: 20px;
+            height:41px;
+            width:1200px;
+        }
+        #tt2 {
+            font-size: 14px;
+            line-height: 20px;
+            height: 21px;
+            width: 1200px;
+            color:red;
         }
 
     </style>
@@ -55,9 +346,8 @@
 <body>
     <div class="main">
         <div class="product-container">
-
             <div class="product-img">
-                <img src="https://cdn0.fahasa.com/media/catalog/product/t/u/tu_duy_phan_bien_1_2018_08_04_09_30_58.jpg?_gl=1*hc4gpz*_gcl_aw*R0NMLjE2OTY4NjA0MDMuQ2p3S0NBand5WTZwQmhBOUVpd0FNem1md2VFcHBlcEw4RDVoSU1aQ05ocGFjQ2s0Y2NLVGlzdzJ0RjNveDdIY1JJVFdwMXhVTUI3WkxSb0NrU0FRQXZEX0J3RQ..*_gcl_au*MTU0OTU1NTA2LjE2OTY4NjA0MDM.*_ga*NzE3OTEwNDY3LjE2OTY4NjA0MDQ.*_ga_460L9JMC2G*MTY5Njk5OTQ1MS4xMC4xLjE2OTY5OTk4NDIuMjMuMC4w" alt="anh1" />
+                <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.15752-9/387561698_1048059822878277_8367243683696530178_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=gXiH0sds67gAX9rfkjD&_nc_ht=scontent.fsgn5-5.fna&cb_e2o_trans=q&oh=03_AdSC-Le3_wDGrpY6eQhxy59lzQbBE8R-kvOLeM9edk_rkA&oe=654E40C7" alt="anh1" />
                 <div class="add-box">
                     <button class="button" id="add_to_cart">Thêm Vào Giỏ Hàng</button>
                     <button class="button" id="buy_now">Mua Ngay</button>
@@ -67,21 +357,143 @@
             <div class="product-detail">
                 <h1>Tư Duy Phản Biện</h1>
                 <div class="book_infor">
-
+                    <div id="s1">
+                        <div id="supplier">
+                            <span>Nhà cung cấp: </span>
+                            <span style="font-weight:600; color:blue">1980 Books</span>
+                        </div>
+                        <div id="author">
+                            <span>Tác giả: </span>
+                            <span style="font-weight:700">Zoe McKey</span>
+                        </div>
+                    </div>
+                    <div id="s2">
+                        <div id="supplier">
+                            <span>Nhà xuất bản: </span>
+                            <span style="font-weight:700">NXB Thế Giới</span>
+                        </div>
+                        <div id="author">
+                            <span>Hình thức bìa: </span>
+                            <span style="font-weight:700">Bìa Mềm</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="Priceblock">
-
+                    <div id="listprice">
+                        <div id="pricedetail">
+                            <span id="price1">51.000 đ</span>
+                            <p class="old-price">
+                                <span id="price2">85.000 đ</span>
+                                <span id="discount">-40%</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div id="delivery">
-
+                    <div id="address">
+                        <div id="list1">Thời gian giao hàng </div>
+                        <div id="list2">
+                            <span>Giao hàng đến </span>
+                            <span style="color:blue"> Thay đổi</span>
+                        </div>
+                    </div>
+                    <div id="policy">
+                        <div id="list1">Chính sách đổi trả </div>
+                        <div id="list2">
+                            <span>Đổi trả sản phẩm trong 30 ngày </span>
+                            <span style="color:blue"> Xem thêm</span>
+                        </div>
+                    </div>
                 </div>
-                <div id="product_number">
-
+                <div class="quantity">
+                    <div id="quantity-box">
+                        <label>Số Lượng</label>
+                        <div id="quantity-box-block">
+                            <button onclick="decrease()" id="subtract">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button onclick="increase()" id="plus">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+        </div>
+        <div class="product-view-infor">
+            <div class="content-title">Thông tin sản phẩm</div>
+            <div class="product-view-content">
+                <table>
+                    <tr>
+                        <th class="table-label">Mã hàng</th>
+                        <td class="data">8936066685412</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Tên Nhà Cung Cấp</th>
+                        <td class="data">1980 Books</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Tác giả</th>
+                        <td class="data">Zoe McKey</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Người Dịch</th>
+                        <td class="data">Jaden Minh</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">NXB</th>
+                        <td class="data">NXB Thế Giới</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Năm XB</th>
+                        <td class="data">2018</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Trọng lượng (gr)</th>
+                        <td class="data">200</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Kích Thước Bao Bì</th>
+                        <td class="data">13 x 20 x 0.9</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Số trang</th>
+                        <td class="data">172</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Hình thức</th>
+                        <td class="data">Bìa Mềm</td>
+                    </tr>
+                    <tr>
+                        <th class="table-label">Sản phẩm hiển thị trong</th>
+                        <td class="data">
+                            <ul>
+                                <li>1980 Books</li>
+                                <li>Tủ Sách Tâm Lý Kỹ Năng</li>
+                                <li>VNPAY</li>
+                                <li>RƯỚC DEAL LINH ĐÌNH VUI ĐÓN TRUNG THU</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-label" >Sản phẩm bán chạy nhất</th>
+                        <td class="data" style="color:blue">Top 100 sản phẩm Kỹ năng sống bán chạy của tháng</td>
+                    </tr>
+                </table>
+                <div id="tt1">Giá sản phẩm trên Fahasa.com đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như Phụ phí đóng gói, phí vận chuyển, phụ phí hàng cồng kềnh,...</div>
+                <div id="tt2">Chính sách khuyến mãi trên Fahasa.com không áp dụng cho Hệ thống Nhà sách Fahasa trên toàn quốc</div>
+            </div>
         </div>
     </div>
+    <script>
+        function decrease() {
+            let quantity = document.getElementById('quantity');
+            if (quantity.value > 1) {
+                quantity.value--;
+            }
+        }
 
+        function increase() {
+            let quantity = document.getElementById('quantity');
+            quantity.value++;
+        }
+    </script>
 </body>
 </html>
